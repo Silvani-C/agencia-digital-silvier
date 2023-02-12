@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#ff4f5a;
+    --cor2:#1a2e35;
+    --cor3:#385a64;
+}
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position:fixed; 
+}
+.logo{
+    flex:20%;
+    margin-left:10%;
+    text-align: left;
+}
+.logo h1{
+    font-family: 'Lobster', cursive;
+    color: var(--cor2);
+    font-size:30px;
+}
+.logo span{
+    color: #ff4f5a;
+}
+.menu{
+    flex:70%;/*tamanho do meu bloco*/
+    text-align:right;/*a direita*/
+    padding:20px;
+}
+.menu a{
+    color:var(--cor2);
+    text-decoration: none;
+    font-size:20px;
+    padding:20px 16px; 
+}
+.menu a:hover{
+    color:var(--cor1);
+    border-top:4px solid var(--cor1);
+}
+#botao{
+    background: var(--cor1);
+    padding: 10px 25px;
+    color:white;
+    border-radius:5px;
+    margin-right:10%;
+    margin-left:5%;
+}
+#botao:hover{
+    border:none;
+    background: var(--cor2);
+}
+.header{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top:150px;
+}
+.area-texto{
+    margin-left:10%;
+    flex:40%;
+}
+.area-texto h2{
+    font-weight: 900;
+    font-size:20px;
+    color:var(--cor3);  
+    letter-spacing:15px; 
+    padding:0;
+    margin:0;
+}
+.area-texto .h2{
+    font-size:80px;
+    color:var(--cor2);
+    letter-spacing:5px; 
+}
+.area-texto p{
+    color:var(--cor3);
+    text-align:left;
+    padding: 10px;
+}
+.contact-btn{
+    display: inline-block;
+    background: var(--cor1);
+    padding:15px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.contact-btn:hover{
+    background:var(--cor2);
+}
+.area-img{
+    margin-right:10%;
+    flex:40%;
+    text-align:center;
+}
+section{
+    display: inline-block;
+    margin-top:80px;
+    margin-left:5%;
+    margin-right:5%;
+    padding:5%;
+    text-align: center;
+    width: 90%;   
+}
+section h2{
+    width:100%;
+    font-size:50px;
+    margin:0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color:var(--cor2);
+}
+.cards-grupo{
+    display: inline-block;
+    margin-top:5%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding:20px;
+    margin:1%;
+    border:1px solid var(--cor1);
+    border-radius:10px;
+    cursor:pointer;
+}
+.card:hover{
+    background: var(--cor1);
+    color:white;
+    padding:40px;
+    transition: all 0.5s;
+}
+.card:hover img{
+    display: none; 
+}
+.card:hover .card-text{
+    display:none; 
+}
+.card-text h3{
+    padding: 10px;
+}
+.texto-oculto{
+    display: none;
+}
+.texto-oculto h3{
+    padding: 10px;
+}
+.card:hover .texto-oculto{
+    display:block;
+}
+footer{
+    height: 290px;
+    background-image:linear-gradient(180deg, var(--cor2), var(--cor3));
+    text-align:center;
+    border-top:5px solid var(--cor1);
+}
+.logo-rodape{
+ padding: 100px;
+}
+.logo-rodape .agencia{
+    font-family: 'Lobster', cursive;
+    color:#fff;
+    font-size:30px;
+    padding-bottom: 10px;
+}
+.logo-rodape p{
+    color: white;
+    font-size: 14px;
+}
+.whats img{
+    width: 70px;
+    position: fixed;
+    bottom:5px;
+    right:5px;  
+}
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+@media screen and (max-width:1005px){
+    .navbar{
+        position: relative;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        margin:10;
+        text-align:center; 
+    }
+    .header{
+        flex-flow:row wrap;
+        justify-content: end;
+        align-items: center;
+        background: white;
+        padding-top:0px; 
+        margin-top: 0px;
+    }
+    .area-texto{
+        flex:90%;
+        margin:10%;
+        text-align:center;       
+    }
+    .area-texto .h2{
+    font-size: 80px;
+    }
+    .area-texto p{
+        text-align:center;
+    }
+    .area-img{
+        flex:90%;
+        margin:10%;
+        text-align:center;
+    }
+    section h2{
+        font-size: 60px;
+    }
+    .card{
+        width:90%;
+        margin: 10px;
+    }
+    footer .logo-rodape h4{
+        color: #fff;
+        padding:20px; 
+    }
+    footer .res p{
+        color: #fff;
+        padding: 30px;
+    }
+    .whats{
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    .area-texto{
+        overflow: hidden;
+    }
+    .logo{
+        flex:20%;
+        margin-left:5%;
+        text-align: center;
+    }
+    .area-texto .h2{
+        font-size:3rem;
+    }
+    .area-texto h2{
+        letter-spacing:2px; 
+    }
+    section{
+        overflow: hidden;
+    }
+    section h2{
+        font-size: 1.5rem;
+    }
+    .logo-rodape{
+        padding:100px;
+    }
+}
